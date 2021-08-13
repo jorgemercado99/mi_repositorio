@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(
+    circle,
+    rgba(255, 244, 0, 1) 0%,
+    rgba(73, 73, 0, 1) 100%
+  );
+}
+h1 {
+  color: rgb(134, 132, 0);
+}
+h3 {
+  color: rgb(87, 86, 86);
+}
+a {
+  text-decoration: none;
+}
+/*INICIO HEADER*/
+
+header {
+  background-color: rgb(0, 0, 0);
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-area: header;
+}
+.logo {
+  height: 75px;
+}
+/*INICIO NAV*/
+.nav {
+  width: 100%;
+  height: 75px;
+}
+.navUl {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.navUlLi {
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+}
+.navUlLi:hover {
+  background-color: rgb(39, 39, 39);
+  border-radius: 5%;
+}
+.navUlLiA {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/*FIN NAV*/
+
+/*FIN HEADER*/
+
+/*INICIO INDEX*/
+#grillaIndex {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "intro intro aside"
+    "blog clips aside"
+    "blog clips aside"
+    "footer footer footer";
+  grid-template-rows: 75px 200px 250px 250px 50px;
+  grid-template-columns: auto 350px 300px;
+}
+.introduccionSection {
+  grid-area: intro;
+}
+.blogArticle {
+  grid-area: blog;
+}
+.clipsSemanaArticle {
+  grid-area: clips;
+}
+aside {
+  grid-area: aside;
+}
+.titleIntroduccion {
+  font-size: 30px;
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+}
+.titleBlog {
+  font-size: 30px;
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+}
+.subtitleBlog {
+  padding: 0px 10px;
+}
+.titleClipsSemana {
+  font-size: 30px;
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+}
+.paneles {
+  background-color: grey;
+  margin: 5px;
+  padding: 20px;
+}
+.paneles:hover {
+  background-color: rgb(104, 104, 0);
+  transition: 1s;
+  color: white;
+}
+.panelesText {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+.panelAds {
+  text-align: center;
+  color: white;
+  background-color: darkslategrey;
+  margin: 5px;
+  padding: 20px;
+  height: 300px;
+}
+p {
+  margin: 0px 10px;
+}
+/*FIN INDEX*/
+
+/*INICIO QUIENES SOMOS*/
+#grillaQuienesSomos {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "title title title"
+    "div1 div1 div1"
+    "div2 div2 div2"
+    "div3 div3 div3"
+    "div4 div4 div4"
+    "footer footer footer";
+  grid-template-rows: 75px 100px 200px 200px 200px 200px 50px;
+  grid-template-columns: auto auto auto;
+}
+.gridQuienesSomos1 {
+  grid-area: div1;
+}
+.gridQuienesSomos2 {
+  grid-area: div2;
+}
+.gridQuienesSomos3 {
+  grid-area: div3;
+}
+.gridQuienesSomos4 {
+  grid-area: div4;
+}
+.titleQuienesSomos {
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+  grid-area: title;
+}
+.divQuienesSomos {
+  display: flex;
+}
+.divQuienesSomosTitle {
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: rgb(150, 150, 150, 0.4);
+  border-radius: 10%;
+}
+.divQuienesSomosNombre {
+  width: 300px;
+  height: 150px;
+}
+.divQuienesSomosSobreMi {
+  width: 600px;
+  height: 150px;
+}
+.divQuienesSomosRedes {
+  width: 400px;
+  height: 150px;
+}
+.ulRedes {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+}
+.ulLiRedes {
+  padding: 10px;
+}
+.ulLiARedes {
+  text-decoration: none;
+  color: black;
+}
+
+/*FIN QUIENES SOMOS*/
+
+/*INICIO TIENDA*/
+#grillaTienda {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "title title title"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+    "footer footer footer";
+  grid-template-rows: 75px 100px 400px 400px 400px 50px;
+  grid-template-columns: auto auto auto;
+}
+.gridTienda1 {
+  grid-area: section1;
+}
+.gridTienda2 {
+  grid-area: section2;
+}
+.gridTienda3 {
+  grid-area: section3;
+}
+.titleTienda {
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+  grid-area: title;
+}
+.camisetasTienda {
+  padding: 20px;
+}
+.buzosTienda {
+  padding: 20px;
+}
+.gorrasTienda {
+  padding: 20px;
+}
+.divTienda {
+  display: flex;
+}
+.articuloTienda {
+  width: 350px;
+  height: 250px;
+  margin: 30px;
+}
+.imagenArticuloTienda {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*FIN TIENDA*/
+
+/*INICIO COMUNIDAD*/
+.titleComunidad {
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+}
+.tableComunidad {
+  padding: 20px;
+}
+.divClips {
+  display: flex;
+}
+.divClipsBox {
+  background-color: grey;
+  margin: 15px;
+}
+.titleClips {
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+}
+/*FIN COMUNIDAD*/
+
+/*INICIO CONTACTO*/
+.titleContacto {
+  color: rgb(26, 23, 0);
+  padding: 20px 10px;
+}
+.divFormContacto {
+  display: flex;
+  justify-content: center;
+}
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  border-radius: 2%;
+  padding: 40px;
+  margin: 20px 10px;
+  height: 500px;
+  width: 500px;
+}
+.formTitle {
+  margin: 0px 20px 20px 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.inputEmail {
+  height: 25px;
+  width: auto;
+  margin: 10px;
+}
+.inputName {
+  height: 25px;
+  width: auto;
+  margin: 10px;
+}
+.labelMayor18 {
+  height: 25px;
+  width: auto;
+  margin: 10px;
+}
+.labelMenor18 {
+  height: 25px;
+  width: auto;
+  margin: 10px;
+}
+.selectMotivo {
+  height: 25px;
+  width: auto;
+  margin: 10px;
+}
+.textareaComentarios {
+  margin: 10px;
+}
+.inputReset {
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+.inputSubmit {
+  height: 40px;
+  width: auto;
+  margin: 10px;
+  border-color: black;
+}
+/*FIN CONTACTO*/
+footer {
+  grid-area: footer;
+}
+.footer {
+  background-color: lightgray;
+}
+.footerItems {
+  color: grey;
+}

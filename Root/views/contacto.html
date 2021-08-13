@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KND team</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="shortcut icon" href="../Assets/Img/LOGO-IG.png">
+</head>
+<body>
+    <header>
+		<img src="../Assets/Img/KND.png" alt="Logo KND" class="logo">
+		<nav class="nav">
+			<ul class="navUl">
+				<li class="navUlLi"><a href="../index.html" class="navUlLiA">Home</a></li>
+				<li class="navUlLi"><a href="quienesSomos.html" class="navUlLiA">Quienes Somos</a></li>
+				<li class="navUlLi"><a href="tienda.html" class="navUlLiA">Tienda</a></li>
+				<li class="navUlLi"><a href="comunidad.html" class="navUlLiA">Comunidad</a></li>
+				<li class="navUlLi">Contacto</li>
+			</ul>
+		</nav>
+	</header>
+    <h1 class="titleContacto">Contacto</h1>
+    <div class="divFormContacto">
+       <form action="" class="formContacto">
+            <p class="formTitle">Formulario de contacto</p>
+            <input type="email" name="email" class="inputEmail" placeholder="Ingresa tu email" required>
+            <input type="text" name="nombre" class="inputName" placeholder="Ingresa tu nombre y apellido" required>
+            <label class="labelMayor18">Mayor de 18 años
+                <input type="radio" name="edad">
+            </label>
+            <label class="labelMenor18">Menor a 18 años
+                <input type="radio" name="edad">
+            </label>
+            <select class="selectMotivo" required>
+                <option value="">MOTIVO DEL COMENTARIO</option>
+                <option>Quiero formar parte de la KND</option>
+                <option>Consultas</option>
+                <option>Quejas</option>
+            </select>
+            <textarea rows="10" cols="20" class="textareaComentarios" placeholder="Comentarios"></textarea>
+            <input type="reset" name="reset" class="inputReset">
+            <input type="submit" name="submit" class="inputSubmit">
+       </form> 
+    </div>
+    <footer class="footer">
+		<h6 class="footerItems">Copyright</h6>
+		<h6 class="footerItems">Redes KND</h6>
+	</footer>
+</body>
+</html>
